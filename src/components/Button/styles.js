@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const ButtonContainer = styled.button`
   background: #565656;
@@ -12,13 +12,15 @@ export const ButtonContainer = styled.button`
   //se for diferente do primary ele altera.
   ${({ variant }) =>
     variant !== 'primary' &&
-    // eslint-disable-next-line no-undef
     css`
       min-width: 167px;
       height: 33px;
 
       background: #e4185d;
-
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
       &::after {
         content: '';
         position: absolute;

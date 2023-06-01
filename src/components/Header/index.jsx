@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../../assets/logo-dio.png'
-import {BuscarInputContainer, Column,Container,Input,Menu,MenuRight,Row,UserPicture,Wrapper} from './styles'
+import {BuscarInputContainer, Container,Input,Menu,Row,Wrapper} from './styles'
 import {Button} from '../Button'
 
 const Header = () => 
@@ -16,6 +16,7 @@ const Header = () =>
       <Menu>Live Code</Menu>
       <Menu>Global</Menu>
         </Row>
+        <Button />
       </Container>
       </Wrapper>
   )
