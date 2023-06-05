@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 
-import {bannerImage} from '../../assets/banner.png'
+import Banner from '../../assets/banner.png'
 import {Header} from '../../components/Header' 
 import {Button} from '../../components/Button' 
 import {Container, TextContent,Title, TitleHighLight} from './styles'
@@ -20,7 +20,7 @@ const Home = () => {
       <Button title='Comece agora' variant='secondary'onClick={()=> null} />
       </div>
       <div>
-   <img src={bannerImage} alt="Banner" />
+   <img src={Banner} alt="Banner" />
       </div>
     </Container></>
   )
